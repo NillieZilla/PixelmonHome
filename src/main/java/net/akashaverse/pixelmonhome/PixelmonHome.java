@@ -3,6 +3,8 @@ package net.akashaverse.pixelmonhome;
 import com.mojang.logging.LogUtils;
 
 
+import net.akashaverse.pixelmonhome.client.ClientInit;
+import net.akashaverse.pixelmonhome.config.PHConfig;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -28,6 +30,9 @@ public class PixelmonHome {
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+
+        PHConfig.register();
+        ClientInit.attach(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

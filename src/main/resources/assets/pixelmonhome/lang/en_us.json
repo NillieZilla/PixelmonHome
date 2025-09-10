@@ -1,3 +1,7 @@
 {
-
+  "screen.pixelmonhome.title": "Pixelmon Home",
+  "screen.pixelmonhome.deposit": "Send to Home",
+  "screen.pixelmonhome.withdraw": "Withdraw",
+  "key.pixelmonhome.open": "Open Pixelmon Home",
+  "key.categories.pixelmonhome": "Pixelmon Home"
 }
